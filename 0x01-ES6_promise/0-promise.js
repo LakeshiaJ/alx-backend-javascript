@@ -1,8 +1,10 @@
-function getResponseFromAPI() {
-    return new Promise((resolve, reject) => {
-        resolve(0);
-    })
+function getFullResponseFromAPI(success) {
+    if (success) {
+        return Promise.resolve({status: 200, body: 'success'})
+    } else {
+        return Promise.reject(new Error('The fake API is not working currently'));
+    }
 }
 
-const response = getResponseFromAPI();
-console.log(response instanceof Promise);
+console.log(getFullResponseFromAPI(true));
+console.log(getFullResponseFromAPI(false));
