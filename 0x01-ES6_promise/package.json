@@ -1,0 +1,16 @@
+{
+  "name": "0x01-es6_promise",
+  "version": "1.0.0",
+  "description": "0x01. ES6 Promises",
+  "main": "0-promise.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "D": "^1.0.0",
+    "jest": "^29.7.0"
+  }
+}
