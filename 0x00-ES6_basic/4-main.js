@@ -1,4 +1,15 @@
-import returnHowManyArguments from './4-rest-parameter.js';
-
-console.log(returnHowManyArguments("one"));
-console.log(returnHowManyArguments("one", "two", 3, "4th"));
+export function taskFirst() {
+    const task = 'I prefer const when I can.';
+    return task;
+  }
+  
+  export function getLast() {
+    return ' is okay';
+  }
+  
+  export function taskNext() {
+    let combination = 'But sometimes let';
+    combination += getLast();
+  
+    return combination;
+  }
